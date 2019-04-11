@@ -1,8 +1,8 @@
 function addBorder(picture: string[]): string[] {
-    const result = picture.map(str => `*${str}*`);
+    const result: string[] = picture.map(str => `*${str}*`);
     
-    const borderLength = result[0].length;
-    let border = '*';
+    const borderLength: number = result[0].length;
+    let border: string = '*';
 
     for(let i = 1; i < borderLength; i++) {
         border += '*';
